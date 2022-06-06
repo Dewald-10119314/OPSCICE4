@@ -1,13 +1,18 @@
 package com.example.ice4;
 
+import android.graphics.Bitmap;
+
 public class FruitObj {
     private String name;
     private String desc;
-    private int ImgURI;
+    private Bitmap ImgBMP;
 
-    public FruitObj(String name, String desc) {
+    public FruitObj(){};
+
+    public FruitObj(String name, String desc, Bitmap img) {
         this.name = name;
-        this.desc = desc;;
+        this.desc = desc;
+        this.ImgBMP = img;
     }
 
     public String getName() {
@@ -26,11 +31,11 @@ public class FruitObj {
         this.desc = desc;
     }
 
-    public int getImgURI() {
-        return ImgURI;
+    public Bitmap getImgBMP() {
+        return ImgBMP;
     }
 
-    public void setImgURI(int imgURI) {
-        ImgURI = imgURI;
+    public void setImgBMP(Bitmap imgBMP) {
+        ImgBMP = imgBMP;
     }
 }

@@ -41,5 +41,6 @@ public class View_Fruit extends AppCompatActivity {
         Intent i = getIntent();
         txtName.setText(i.getStringExtra("name"));
         txtDesc.setText(i.getStringExtra("desc"));
+        imgFruit.setImageBitmap(MainActivity.fruit.getImgBMP());
     }
 }
